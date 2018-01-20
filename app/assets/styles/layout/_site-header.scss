@@ -1,0 +1,119 @@
+.primary-nav {
+    align-items: center;
+    position: absolute;
+    z-index: 5;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include atMedium {
+        margin-top: -60px;
+        background: grey;
+    }
+    @include atLarge {
+        padding-top: 20px;
+    }
+}
+
+.primary-nav__logo {
+    position: absolute;
+    top: 20px;
+    left: 40px;
+    text-decoration: none;
+    font-size: 4em;
+    font-weight: 600;
+    font-family: 'Yesteryear', cursive;
+    color: black;
+    @include atMedium {
+        top: 60px;
+        left: 40%;
+    }
+    @include atLarge {
+        left: 50%;
+    }
+    @include atExtraLarge {
+        left: 20%;
+    }
+}
+
+.primary-nav__burger {
+    position: absolute;
+    top: 30px;
+    right: 40px;
+    display: inline-block;
+    font-size: 2.4em;
+    &:hover {
+        cursor: pointer;
+    }
+    @include atMedium {
+        display: none;
+    }
+}
+
+.primary-nav__row {
+    display: none;
+    width: 100%;
+    margin-top: 100px;
+    background: orange;
+    opacity: 0.8;
+    @include atMedium {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        margin-right: 45px;
+        margin-left: 45px;
+        background: none;
+        margin-top: 0px;
+    }
+    @include atLarge {
+        justify-content: flex-end;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    @include atExtraLarge {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+}
+
+.primary-nav__row--open {
+    display: block;
+    padding: 20px 0;
+}
+
+.primary-nav__link {
+    text-decoration: none;
+    font-size: 0.8em;
+    padding-bottom: 10px;
+    &:hover {
+        color: black;
+        @include atMedium {
+            color: #fff;
+        }
+    }
+}
+
+.primary-nav__list {
+    display: block;
+    padding: 15px 0;
+    text-align: center;
+    font-size: 1.4em;
+    @include atSmall {
+        padding: 20px 0;
+    }
+    @include atMedium {
+        display: inline-block;
+        padding: 0 0.4rem;
+    }
+}
+
+.primary-nav__logo--triangle {
+    display: none;
+    @include atMedium {
+        display: inline;
+        width: 0;
+        height: 0;
+        border-left: 50px solid transparent;
+        border-right: 50px solid transparent;
+        border-top: 100px solid red;
+    }
+}

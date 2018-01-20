@@ -1,0 +1,767 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol,
+ul {
+  list-style: none; }
+
+blockquote,
+q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+body {
+  font-family: roboto; }
+
+.section-header {
+  font-family: 'Yesteryear', cursive;
+  font-size: 2.2em;
+  display: inline;
+  margin: 40px 20px 20px 20px; }
+  .section-header__icon--left {
+    color: orange;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    left: 20%;
+    margin-top: 9px; }
+  .section-header__icon--right {
+    color: orange;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    position: absolute;
+    right: 20%;
+    margin-top: 9px; }
+
+.section-header__line--left {
+  width: 12%;
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  margin-top: 17px; }
+
+.section-header__line--right {
+  width: 12%;
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  margin-top: 17px; }
+
+section {
+  text-align: center;
+  padding: 0 10px;
+  margin: 0 auto; }
+
+.primary-nav {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  @media (min-width: 768px) {
+    .primary-nav {
+      margin-top: -60px;
+      background: grey; } }
+  @media (min-width: 1010px) {
+    .primary-nav {
+      padding-top: 20px; } }
+
+.primary-nav__logo {
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  text-decoration: none;
+  font-size: 4em;
+  font-weight: 600;
+  font-family: 'Yesteryear', cursive;
+  color: black; }
+  @media (min-width: 768px) {
+    .primary-nav__logo {
+      top: 60px;
+      left: 40%; } }
+  @media (min-width: 1010px) {
+    .primary-nav__logo {
+      left: 50%; } }
+  @media (min-width: 1400px) {
+    .primary-nav__logo {
+      left: 20%; } }
+
+.primary-nav__burger {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  display: inline-block;
+  font-size: 2.4em; }
+  .primary-nav__burger:hover {
+    cursor: pointer; }
+  @media (min-width: 768px) {
+    .primary-nav__burger {
+      display: none; } }
+
+.primary-nav__row {
+  display: none;
+  width: 100%;
+  margin-top: 100px;
+  background: orange;
+  opacity: 0.8; }
+  @media (min-width: 768px) {
+    .primary-nav__row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+      margin-right: 45px;
+      margin-left: 45px;
+      background: none;
+      margin-top: 0px; } }
+  @media (min-width: 1010px) {
+    .primary-nav__row {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end;
+      margin-left: 10%;
+      margin-right: 10%; } }
+  @media (min-width: 1400px) {
+    .primary-nav__row {
+      margin-left: 20%;
+      margin-right: 20%; } }
+
+.primary-nav__row--open {
+  display: block;
+  padding: 20px 0; }
+
+.primary-nav__link {
+  text-decoration: none;
+  font-size: 0.8em;
+  padding-bottom: 10px; }
+  .primary-nav__link:hover {
+    color: black; }
+    @media (min-width: 768px) {
+      .primary-nav__link:hover {
+        color: #fff; } }
+
+.primary-nav__list {
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.4em; }
+  @media (min-width: 481px) {
+    .primary-nav__list {
+      padding: 20px 0; } }
+  @media (min-width: 768px) {
+    .primary-nav__list {
+      display: inline-block;
+      padding: 0 0.4rem; } }
+
+.primary-nav__logo--triangle {
+  display: none; }
+  @media (min-width: 768px) {
+    .primary-nav__logo--triangle {
+      display: inline;
+      width: 0;
+      height: 0;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      border-top: 100px solid red; } }
+
+footer {
+  height: 200px;
+  background: black;
+  color: white;
+  text-align: center;
+  font-size: 2em; }
+
+.testimonials__card__quote {
+  font-family: 'Yesteryear', cursive;
+  padding-top: 40px;
+  margin: 0 auto;
+  font-size: 1.4em; }
+  .testimonials__card__quote--name {
+    font-family: 'Yesteryear', cursive;
+    padding-top: 50px;
+    font-size: 2em;
+    color: grey; }
+  .testimonials__card__quote--job {
+    padding-top: 15px;
+    font-size: 1em; }
+
+.testimonials__card__image {
+  height: 240px;
+  width: 210px; }
+
+#testimonials-carousel {
+  margin-top: 50px;
+  border: 1px solid grey;
+  padding-top: 40px; }
+
+.testimonials__card__text-container {
+  float: left;
+  width: 50%;
+  text-align: left;
+  padding-left: 40px; }
+
+.testimonials__card__image-container {
+  float: left;
+  padding: 20px 20px 0px 1px;
+  width: 30%; }
+
+.features {
+  padding: 90px 0 20px 0; }
+  .features__card {
+    width: 100%;
+    height: 80px;
+    position: relative;
+    color: white; }
+    .features__card:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-top: 40px solid white;
+      border-bottom: 40px solid white; }
+    .features__card:before {
+      content: "";
+      position: absolute;
+      right: -40px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-top: 40px solid transparent;
+      border-bottom: 40px solid transparent; }
+    .features__card--orange {
+      background: orange; }
+      .features__card--orange:before {
+        border-left: 40px solid white; }
+      .features__card--orange:after {
+        border-left: 40px solid orange; }
+    .features__card--black {
+      background: black; }
+      .features__card--black:before {
+        border-left: 40px solid white; }
+      .features__card--black:after {
+        border-left: 40px solid black; }
+    .features__card--grey {
+      background: grey; }
+      .features__card--grey:before {
+        border-left: 40px solid white; }
+      .features__card--grey:after {
+        border-left: 40px solid grey; }
+    .features__card--icon {
+      font-size: 2.8em;
+      float: left;
+      margin-top: .4em;
+      margin-left: 20%; }
+    .features__card--heading {
+      font-size: 1.8em;
+      font-weight: 500;
+      margin: 15px 0 0 5%;
+      float: left; }
+    .features__card--sub {
+      font-size: 1em;
+      float: left;
+      margin: 5px 0 0 5%; }
+
+#features-carousel {
+  margin: 20px auto 70px auto; }
+
+.handpicked {
+  text-align: center; }
+  .handpicked-carousel__2-row-card {
+    width: 340px;
+    margin: 0 auto 10px auto; }
+  .handpicked-carousel__2-row-image {
+    width: 340px;
+    outline: 3px solid white;
+    outline-offset: -20px; }
+  .handpicked-carousel__1-row-card {
+    width: 340px;
+    margin: 0 auto; }
+  .handpicked-carousel__1-row-image {
+    width: 340px;
+    outline: 3px solid white;
+    outline-offset: -20px; }
+
+#handpicked-carousel {
+  margin: 0 0 40px 0;
+  width: 100%; }
+
+.home {
+  height: 500px;
+  padding-top: 140px; }
+  @media (min-width: 1010px) {
+    .home {
+      margin-bottom: 0; } }
+  .home__shop-button {
+    position: absolute;
+    width: 100px;
+    background: orange;
+    border: none;
+    color: white;
+    padding: 10px;
+    top: 180px;
+    left: 15%; }
+
+.home-carousel__image {
+  z-index: 1;
+  width: 100%;
+  height: 550px; }
+
+.home__sale-card {
+  border: 1px solid gray;
+  position: absolute;
+  top: 570px;
+  left: 60%;
+  padding: 20px 30px;
+  z-index: 5; }
+  @media (min-width: 481px) {
+    .home__sale-card {
+      top: 400px;
+      left: 60%;
+      padding: 20px 30px; } }
+  .home__sale-card:before {
+    content: ' ';
+    position: absolute;
+    z-index: -1;
+    top: 5px;
+    left: 5px;
+    right: 5px;
+    bottom: 5px;
+    border: 1px solid grey; }
+  .home__sale-card--season {
+    color: grey;
+    font-size: 0.8em;
+    display: block; }
+  .home__sale-card--sale {
+    color: black;
+    font-size: 2em;
+    display: block;
+    margin-top: 10px; }
+  .home__sale-card--up-to {
+    color: grey;
+    font-size: 0.9em;
+    display: block;
+    margin-top: 10px; }
+  .home__sale-card--off {
+    color: black;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 10px; }
+
+#home-carousel {
+  border: 2px solid grey; }
+  @media (min-width: 768px) {
+    #home-carousel {
+      margin-left: 20px; } }
+
+.our-brands__card__image {
+  width: 100%; }
+
+#our-brands-carousel {
+  padding-bottom: 20px; }
+
+.fall-collection {
+  text-align: center;
+  padding: 40px 0px 0 0px;
+  margin: 0 auto; }
+  .fall-collection__card {
+    margin: 20px 20px 20px 20px;
+    height: 280px; }
+    .fall-collection__card__image {
+      width: 220px; }
+    .fall-collection__card:hover {
+      opacity: 0.3; }
+    .fall-collection__card__add {
+      color: white;
+      font-size: .8em;
+      position: relative;
+      top: 0px;
+      left: 0;
+      margin: -30px auto auto auto;
+      right: 0;
+      border-bottom: 30px solid black;
+      border-left: 50px solid transparent;
+      border-right: 50px solid transparent;
+      height: 0;
+      width: 100px; }
+      .fall-collection__card__add--text {
+        font-weight: 700;
+        position: relative;
+        top: 10px;
+        left: 0;
+        width: 100%; }
+
+#fall-collection-carousel {
+  border: 1px solid lightgrey;
+  margin-top: 40px;
+  margin-bottom: 110px;
+  padding: 0; }
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both; }
+
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+          animation-name: fadeOut; }
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/*
+ * 	Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  -webkit-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out; }
+
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  padding-top: 40px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+  @media (min-width: 1010px) {
+    .owl-carousel {
+      width: 100%;
+      margin: 0 auto; } }
+  .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    -moz-backface-visibility: hidden;
+    /* fix firefox animation glitch */ }
+  .owl-carousel .owl-stage:after {
+    content: '.';
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    /* fix for flashing background */
+    -webkit-transform: translate3d(0px, 0px, 0px); }
+  .owl-carousel .owl-wrapper,
+  .owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0); }
+  .owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; }
+  .owl-carousel .owl-item img {
+    display: block; }
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
+    display: none; }
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-loaded {
+    display: block; }
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block; }
+  .owl-carousel.owl-hidden {
+    opacity: 0; }
+  .owl-carousel.owl-refresh .owl-item {
+    visibility: hidden; }
+  .owl-carousel.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: -webkit-grab;
+    cursor: grab; }
+  .owl-carousel.owl-rtl {
+    direction: rtl; }
+  .owl-carousel.owl-rtl .owl-item {
+    float: right; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+/**
+ * Owl Carousel v2.2.1
+ * Copyright 2013-2017 David Deutsch
+ * Licensed under  ()
+ */
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+
+.owl-theme .owl-nav [class*='owl-'] {
+  color: #fff;
+  font-size: 14px;
+  margin: 5px;
+  padding: 4px 7px;
+  background: #d6d6d6;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 3px; }
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: #869791;
+  color: #fff;
+  text-decoration: none; }
+
+.owl-theme .owl-nav .disabled {
+  opacity: 0.5;
+  cursor: default; }
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px; }
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+
+.owl-theme .owl-dots .owl-dot {
+  display: inline-block;
+  zoom: 1;
+  *display: inline; }
+
+.owl-theme .owl-dots .owl-dot span {
+  width: 14px;
+  height: 14px;
+  margin: 5px 7px;
+  background: #d6d6d6;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease; }
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: orange; }
+
+/*
+ * 	Default theme - Owl Carousel CSS File
+ */
+/*
+ * 	Green theme - Owl Carousel CSS File
+ */
+/*
+ * 	Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000; }
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  -webkit-transition: -webkit-transform 100ms ease;
+  transition: -webkit-transform 100ms ease;
+  transition: transform 100ms ease;
+  transition: transform 100ms ease, -webkit-transform 100ms ease; }
+
+.owl-carousel .owl-video-play-icon:hover {
+  -webkit-transform: scale(1.3, 1.3);
+          transform: scale(1.3, 1.3); }
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none; }
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: opacity 400ms ease;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%; }

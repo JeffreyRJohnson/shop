@@ -1,0 +1,79 @@
+// .testimonials {
+//     &__card {
+//         height: 400px;
+//         border: 1px solid grey;
+//         padding: 1px;
+//         box-sizing: border-box;
+//         &__quote {
+//             color: grey;
+//             margin: 20px 0px 0px 10px;
+//             font-size: 1.4em;
+//             display: inline;
+//             font-family: 'Yesteryear', cursive;
+//             &--name {
+//                 margin: 40px 200px 0px 0;
+//                 color: black;
+//                 font-size: 2.4em;
+//                 display: inline;
+//                 font-family: 'Yesteryear', cursive;
+//             }
+//             &--job {
+//                 color: darkgrey;
+//                 font-size: 1.4em;
+//                 margin: 20px 200px 40px 10px;
+//                 display: inline;
+//             }
+//         }
+//         &__image {
+//             float: left;
+//             height: 300px;
+//             width: 210px;
+//         }
+//     }
+// }
+// #testimonials-carousel {
+//     padding-top: 50px; // padding-bottom: 40px;
+// }
+.testimonials {
+    &__card {
+        &__quote {
+            font-family: 'Yesteryear', cursive;
+            padding-top: 40px;
+            margin: 0 auto;
+            font-size: 1.4em;
+            &--name {
+                font-family: 'Yesteryear', cursive;
+                padding-top: 50px;
+                font-size: 2em;
+                color: grey;
+            }
+            &--job {
+                padding-top: 15px;
+                font-size: 1em; //margin-bottom: 40px;
+            }
+        }
+        &__image {
+            height: 240px;
+            width: 210px;
+        }
+    }
+}
+
+#testimonials-carousel {
+    margin-top: 50px;
+    border: 1px solid grey;
+    padding-top: 40px;
+}
+
+.testimonials__card__text-container {
+    float: left;
+    width: 50%;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.testimonials__card__image-container {
+    float: left;
+    padding: 20px 20px 0px 1px;
+    width: 30%;
+}

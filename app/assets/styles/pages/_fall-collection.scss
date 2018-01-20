@@ -1,0 +1,43 @@
+.fall-collection {
+    text-align: center;
+    padding: 40px 0px 0 0px;
+    margin: 0 auto;
+    &__card {
+        margin: 20px 20px 20px 20px;
+        height: 280px;
+        &__image {
+            width: 220px;
+        }
+        &:hover {
+            opacity: 0.3;
+        }
+        &__add {
+            color: white;
+            font-size: .8em;
+            position: relative; // bottom: 0px;
+            top: 0px;
+            left: 0;
+            margin: -30px auto auto auto;
+            right: 0;
+            border-bottom: 30px solid black;
+            border-left: 50px solid transparent;
+            border-right: 50px solid transparent;
+            height: 0;
+            width: 100px;
+            &--text {
+                font-weight: 700;
+                position: relative;
+                top: 10px;
+                left: 0;
+                width: 100%;
+            }
+        }
+    }
+}
+
+#fall-collection-carousel {
+    border: 1px solid lightgrey;
+    margin-top: 40px;
+    margin-bottom: 110px;
+    padding: 0;
+}

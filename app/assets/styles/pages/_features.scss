@@ -1,0 +1,80 @@
+.features {
+    padding: 90px 0 20px 0;
+    &__card {
+        width: 100%;
+        height: 80px;
+        position: relative;
+        color: white;
+        &:after {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-top: 40px solid white;
+            border-bottom: 40px solid white;
+        }
+        &:before {
+            content: "";
+            position: absolute;
+            right: -40px;
+            bottom: 0;
+            width: 0;
+            height: 0;
+            border-top: 40px solid transparent;
+            border-bottom: 40px solid transparent;
+        }
+        &--orange {
+            background: orange;
+            &:before {
+                border-left: 40px solid white;
+            }
+            &:after {
+                border-left: 40px solid orange;
+            }
+        }
+        &--black {
+            background: black;
+            &:before {
+                border-left: 40px solid white;
+            }
+            &:after {
+                border-left: 40px solid black;
+            }
+        }
+        &--grey {
+            background: grey;
+            &:before {
+                border-left: 40px solid white;
+            }
+            &:after {
+                border-left: 40px solid grey;
+            }
+        } // &__text-container {
+        //     color: white;
+        // }
+        &--icon {
+            font-size: 2.8em;
+            float: left;
+            margin-top: .4em;
+            margin-left: 20%;
+        }
+        &--heading {
+            font-size: 1.8em;
+            font-weight: 500;
+            margin: 15px 0 0 5%;
+            float: left;
+        }
+        &--sub {
+            font-size: 1em;
+            float: left;
+            margin: 5px 0 0 5%;
+        }
+    }
+}
+
+#features-carousel {
+    margin: 20px auto 70px auto;
+}

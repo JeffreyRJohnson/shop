@@ -1,0 +1,28 @@
+.handpicked {
+    text-align: center;
+    &-carousel {
+        &__2-row-card {
+            width: 340px;
+            margin: 0 auto 10px auto;
+        }
+        &__2-row-image {
+            width: 340px;
+            outline: 3px solid white;
+            outline-offset: -20px;
+        }
+        &__1-row-card {
+            width: 340px;
+            margin: 0 auto;
+        }
+        &__1-row-image {
+            width: 340px;
+            outline: 3px solid white;
+            outline-offset: -20px;
+        }
+    }
+}
+
+#handpicked-carousel {
+    margin: 0 0 40px 0;
+    width: 100%;
+}
