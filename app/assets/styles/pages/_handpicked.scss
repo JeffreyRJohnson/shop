@@ -3,21 +3,73 @@
     &-carousel {
         &__2-row-card {
             width: 340px;
+            height: 340px;
             margin: 0 auto 10px auto;
-        }
-        &__2-row-image {
-            width: 340px;
             outline: 3px solid white;
             outline-offset: -20px;
+            position: relative;
+            cursor: pointer;
+            &:hover {
+                opacity: .3;
+            }
+            &__hoverBox {
+                opacity: 0;
+                position: absolute; //top: 140px;
+                left: 50%;
+                top: 50%;
+                width: 100%;
+                height: 100%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+                &:hover {
+                    opacity: 1;
+                }
+                &__text {
+                    color: black;
+                    font-size: 24px;
+                    padding: 50px 32px;
+                }
+            }
+        }
+        &__2-row-image {
+            width: 100%;
         }
         &__1-row-card {
             width: 340px;
+            height: 340px;
             margin: 0 auto;
+            cursor: pointer;
+            &:hover {
+                opacity: .3;
+            }
+            &__hoverBox {
+                opacity: 0;
+                position: absolute; //top: 140px;
+                left: 50%;
+                top: 50%;
+                width: 100%;
+                height: 100%;
+                transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                text-align: center;
+                &:hover {
+                    opacity: 1;
+                }
+                &__text {
+                    color: black;
+                    font-size: 24px;
+                    padding: 50px 32px;
+                }
+            }
         }
         &__1-row-image {
             width: 340px;
             outline: 3px solid white;
             outline-offset: -20px;
+            &:hover {
+                opacity: .5;
+            }
         }
     }
 }

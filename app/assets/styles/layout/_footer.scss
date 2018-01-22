@@ -1,7 +1,25 @@
 footer {
-  height: 200px;
-  background: black;
-  color: white;
-  text-align: center;
-  font-size: 2em;
+    height: 200px;
+    background: black;
+    color: white;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 700;
+    padding: 50px;
+}
+
+footer .fa {
+    font-size: 2rem;
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 50px;
+    background: white;
+    height: 50px;
+    line-height: 1.5;
+    color: black;
+}
+
+footer .fa:hover {
+    border: 5px solid orange;
+    background-color: orange;
 }
