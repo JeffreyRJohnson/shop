@@ -5,6 +5,9 @@
         height: 80px;
         position: relative;
         color: white;
+        @include atMedium {
+            height: 100px;
+        }
         &:after {
             content: "";
             position: absolute;
@@ -15,6 +18,10 @@
             height: 0;
             border-top: 40px solid white;
             border-bottom: 40px solid white;
+            @include atMedium {
+                border-top: 50px solid white;
+                border-bottom: 50px solid white;
+            }
         }
         &:before {
             content: "";
@@ -25,6 +32,10 @@
             height: 0;
             border-top: 40px solid transparent;
             border-bottom: 40px solid transparent;
+            @include atMedium {
+                border-top: 50px solid transparent;
+                border-bottom: 50px solid transparent;
+            }
         }
         &--orange {
             background: orange;
@@ -77,4 +88,7 @@
 
 #features-carousel {
     margin: 20px auto 70px auto;
+    @include atMedium {
+        margin: 60px auto 70px auto;
+    }
 }

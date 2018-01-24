@@ -13708,7 +13708,8 @@ $(document).ready(function () {
         dots: false
       },
       1150: {
-        items: 2
+        items: 1,
+        dots: true
       }
     }
   });
