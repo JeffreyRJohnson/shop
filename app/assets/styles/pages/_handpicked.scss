@@ -3,6 +3,10 @@
     @include atMedium {
         padding: 0 40px 50px 40px;
     }
+    @include atExtraLarge {
+        padding: 0 80px 150px 80px;
+        text-align: center;
+    }
     &-carousel {
         &__2-row-card {
             width: 340px;
@@ -16,6 +20,12 @@
                 margin: 10px 0px 0px 0;
                 width: 270px;
                 height: 270px;
+            }
+            @include atExtraLarge {
+                margin: 20px 0px 0px 0;
+                width: 550px;
+                height: 550px;
+                outline-offset: -30px;
             }
             &:hover {
                 opacity: .3;
@@ -82,6 +92,12 @@
                 margin: 10px 0px 0 10px;
                 width: 280px;
                 height: 552px;
+            }
+            @include atExtraLarge {
+                margin: 20px 0px 0 20px;
+                width: 540px;
+                height: 1120px;
+                outline-offset: -30px;
             }
             &:hover {
                 opacity: .5;

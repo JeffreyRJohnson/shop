@@ -197,12 +197,19 @@ section {
   height: 24px;
   padding: 0px 10px 0px 10px;
   color: white; }
+  @media (min-width: 1400px) {
+    .primary-nav__large-screen {
+      height: 40px; } }
   .primary-nav__large-screen--phone-number {
     display: inline-block;
     float: left;
     padding-left: 40px;
     font-size: .6em;
     margin-top: 7px; }
+    @media (min-width: 1400px) {
+      .primary-nav__large-screen--phone-number {
+        font-size: 1em;
+        margin-top: 10px; } }
     .primary-nav__large-screen--phone-number--icon {
       margin-right: 20px; }
   .primary-nav__large-screen__row {
@@ -211,6 +218,10 @@ section {
     padding-right: 40px;
     font-size: .6em;
     margin-top: 7px; }
+    @media (min-width: 1400px) {
+      .primary-nav__large-screen__row {
+        font-size: 1em;
+        margin-top: 10px; } }
   .primary-nav__large-screen__list {
     display: inline-block; }
 
@@ -221,11 +232,17 @@ section {
   padding: 25px 40px 25px 40px;
   margin-top: -3px;
   margin-bottom: -3px; }
+  @media (min-width: 1400px) {
+    .primary-nav__large-screen2 {
+      padding: 50px 40px 50px 40px; } }
   .primary-nav__large-screen2__row {
     display: inline-block;
     float: left;
     font-size: .9em;
     padding: 10px; }
+    @media (min-width: 1400px) {
+      .primary-nav__large-screen2__row {
+        font-size: 1.2em; } }
   .primary-nav__large-screen2__social {
     display: inline-block;
     float: right;
@@ -235,18 +252,27 @@ section {
   .primary-nav__large-screen2__list {
     display: inline-block;
     padding-right: 10px; }
+    @media (min-width: 1400px) {
+      .primary-nav__large-screen2__list {
+        padding-right: 20px; } }
     .primary-nav__large-screen2__list--icon {
       display: inline-block;
       font-size: .9em;
-      border: 2px solid black;
+      border: 2px solid orange;
       border-radius: 50%;
       width: 20px;
       background: white;
       height: 20px;
       line-height: 1.5;
-      color: black;
+      color: orange;
       margin-right: 10px;
       background: white; }
+      @media (min-width: 1400px) {
+        .primary-nav__large-screen2__list--icon {
+          font-size: 1.2em;
+          width: 30px;
+          height: 30px;
+          line-height: 1.7; } }
   .primary-nav__large-screen2__logo {
     position: absolute;
     color: black;
@@ -257,6 +283,10 @@ section {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%); }
+    @media (min-width: 1400px) {
+      .primary-nav__large-screen2__logo {
+        font-size: 5em;
+        top: -100px; } }
 
 .primary-nav__logo {
   position: absolute;
@@ -379,6 +409,9 @@ footer .fa:hover {
   @media (min-width: 768px) {
     .testimonials {
       padding-bottom: 30px; } }
+  @media (min-width: 1400px) {
+    .testimonials {
+      padding-bottom: 70px; } }
   .testimonials__card__quote {
     font-family: 'Yesteryear', cursive;
     padding-top: 40px;
@@ -387,6 +420,10 @@ footer .fa:hover {
     @media (min-width: 768px) {
       .testimonials__card__quote {
         padding-top: 50px; } }
+    @media (min-width: 1400px) {
+      .testimonials__card__quote {
+        padding-top: 80px;
+        font-size: 2em; } }
     .testimonials__card__quote--name {
       font-family: 'Yesteryear', cursive;
       padding-top: 50px;
@@ -396,6 +433,10 @@ footer .fa:hover {
         .testimonials__card__quote--name {
           padding-top: 20px;
           font-size: 1.8em; } }
+      @media (min-width: 1400px) {
+        .testimonials__card__quote--name {
+          padding-top: 80px;
+          font-size: 2.4em; } }
     .testimonials__card__quote--job {
       padding-top: 15px;
       font-size: 1em; }
@@ -403,9 +444,17 @@ footer .fa:hover {
         .testimonials__card__quote--job {
           padding-top: 5px;
           font-size: .8em; } }
+      @media (min-width: 1400px) {
+        .testimonials__card__quote--job {
+          padding-top: 20px;
+          font-size: 1em; } }
   .testimonials__card__image {
     height: 240px;
     width: 210px; }
+    @media (min-width: 1400px) {
+      .testimonials__card__image {
+        height: 370px;
+        width: 340px; } }
 
 #testimonials-carousel {
   margin-top: 50px;
@@ -415,6 +464,10 @@ footer .fa:hover {
     #testimonials-carousel {
       margin-top: -20px;
       padding-top: 0px; } }
+  @media (min-width: 1400px) {
+    #testimonials-carousel {
+      margin-top: 30px;
+      padding-top: 60px; } }
 
 .testimonials__card__text-container {
   float: left;
@@ -436,9 +489,9 @@ footer .fa:hover {
 
 .testimonials__triangle__container {
   position: relative;
-  top: 31px;
+  top: 81px;
   z-index: 20;
-  left: 38%; }
+  left: 44%; }
 
 @media (min-width: 768px) {
   .testimonials__triangle {
@@ -466,11 +519,17 @@ footer .fa:hover {
   @media (min-width: 768px) {
     .features {
       padding: 20px 40px 60px 40px; } }
+  @media (min-width: 768px) and (min-width: 1400px) {
+    .features {
+      padding: 330px 40px 180px 40px; } }
   .features__card {
     width: 100%;
     height: 60px;
     position: relative;
     color: white; }
+    @media (min-width: 1400px) {
+      .features__card {
+        height: 110px; } }
     .features__card:after {
       content: "";
       position: absolute;
@@ -481,6 +540,10 @@ footer .fa:hover {
       height: 0;
       border-top: 30px solid white;
       border-bottom: 30px solid white; }
+      @media (min-width: 1400px) {
+        .features__card:after {
+          border-top: 55px solid white;
+          border-bottom: 55px solid white; } }
     .features__card:before {
       content: "";
       position: absolute;
@@ -490,38 +553,73 @@ footer .fa:hover {
       height: 0;
       border-top: 30px solid transparent;
       border-bottom: 30px solid transparent; }
+      @media (min-width: 1400px) {
+        .features__card:before {
+          right: -55px;
+          border-top: 55px solid transparent;
+          border-bottom: 55px solid transparent; } }
     .features__card--orange {
       background: orange; }
       .features__card--orange:before {
         border-left: 30px solid white; }
+        @media (min-width: 1400px) {
+          .features__card--orange:before {
+            border-left: 55px solid white; } }
       .features__card--orange:after {
         border-left: 30px solid orange; }
+        @media (min-width: 1400px) {
+          .features__card--orange:after {
+            border-left: 55px solid orange; } }
     .features__card--black {
       background: black; }
       .features__card--black:before {
         border-left: 30px solid white; }
+        @media (min-width: 1400px) {
+          .features__card--black:before {
+            border-left: 55px solid white; } }
       .features__card--black:after {
         border-left: 30px solid black; }
+        @media (min-width: 1400px) {
+          .features__card--black:after {
+            border-left: 55px solid black; } }
     .features__card--grey {
       background: grey; }
       .features__card--grey:before {
         border-left: 30px solid white; }
+        @media (min-width: 1400px) {
+          .features__card--grey:before {
+            border-left: 55px solid white; } }
       .features__card--grey:after {
         border-left: 30px solid grey; }
+        @media (min-width: 1400px) {
+          .features__card--grey:after {
+            border-left: 55px solid grey; } }
     .features__card--icon {
       font-size: 2em;
       float: left;
       margin-top: .4em;
       margin-left: 15%; }
+      @media (min-width: 1400px) {
+        .features__card--icon {
+          font-size: 3.4em;
+          margin-top: .5em; } }
     .features__card--heading {
       font-size: 1.2em;
       font-weight: 500;
       margin: 15px 0 0 5%;
       float: left; }
+      @media (min-width: 1400px) {
+        .features__card--heading {
+          font-size: 2.4em;
+          margin: 25px 0 0 5%; } }
     .features__card--sub {
       font-size: .7em;
       float: left;
       margin: 1px 0 0 5%; }
+      @media (min-width: 1400px) {
+        .features__card--sub {
+          font-size: 1.2em;
+          margin-left: 5%; } }
 
 #features-carousel {
   margin: 20px auto 70px auto; }
@@ -534,6 +632,10 @@ footer .fa:hover {
   @media (min-width: 768px) {
     .handpicked {
       padding: 0 40px 50px 40px; } }
+  @media (min-width: 1400px) {
+    .handpicked {
+      padding: 0 80px 150px 80px;
+      text-align: center; } }
   .handpicked-carousel__2-row-card {
     width: 340px;
     height: 340px;
@@ -547,6 +649,12 @@ footer .fa:hover {
         margin: 10px 0px 0px 0;
         width: 270px;
         height: 270px; } }
+    @media (min-width: 1400px) {
+      .handpicked-carousel__2-row-card {
+        margin: 20px 0px 0px 0;
+        width: 550px;
+        height: 550px;
+        outline-offset: -30px; } }
     .handpicked-carousel__2-row-card:hover {
       opacity: .3; }
     .handpicked-carousel__2-row-card__hoverBox {
@@ -604,6 +712,12 @@ footer .fa:hover {
         margin: 10px 0px 0 10px;
         width: 280px;
         height: 552px; } }
+    @media (min-width: 1400px) {
+      .handpicked-carousel__1-row-image {
+        margin: 20px 0px 0 20px;
+        width: 540px;
+        height: 1120px;
+        outline-offset: -30px; } }
     .handpicked-carousel__1-row-image:hover {
       opacity: .5; }
 
@@ -694,6 +808,9 @@ footer .fa:hover {
       left: 50%;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%); } }
+  @media (min-width: 1400px) {
+    .home__sale-card {
+      top: 300px; } }
   .home__sale-card:before {
     content: ' ';
     position: absolute;
@@ -733,6 +850,9 @@ footer .fa:hover {
       padding-bottom: 13px;
       margin-top: 0px;
       width: 100%; } }
+  @media (min-width: 1400px) {
+    #home-carousel {
+      height: 731px; } }
 
 .triangle-container {
   position: absolute;
@@ -741,6 +861,9 @@ footer .fa:hover {
   transform: translateX(-50%);
   top: 108px;
   z-index: 15; }
+  @media (min-width: 1400px) {
+    .triangle-container {
+      top: 180px; } }
 
 @media (min-width: 768px) {
   .primary-nav__logo--triangle {
@@ -771,19 +894,33 @@ footer .fa:hover {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   height: 470px; }
+  @media (min-width: 1400px) {
+    .home__card--test {
+      height: 800px;
+      margin-top: -20px; } }
 
 .home__card--test img {
   width: 75%;
   height: 50%;
   padding-top: 24px; }
+  @media (min-width: 1400px) {
+    .home__card--test img {
+      height: 740px;
+      width: 140%; } }
 
 .left-model {
   float: left;
   padding-left: 40px; }
+  @media (min-width: 1400px) {
+    .left-model {
+      padding-left: 80px; } }
 
 .right-model {
   float: right;
   padding-right: 10px; }
+  @media (min-width: 1400px) {
+    .right-model {
+      padding-right: 20px; } }
 
 .our-brands__card__image {
   width: 100%; }
@@ -793,10 +930,17 @@ footer .fa:hover {
   @media (min-width: 768px) {
     #our-brands-carousel {
       padding: 60px 40px 60px 40px; } }
+  @media (min-width: 1400px) {
+    #our-brands-carousel {
+      padding: 100px 40px 100px 40px; } }
 
 @media (min-width: 768px) {
   .fall-collection {
     padding: 0 40px 0px 40px; } }
+
+@media (min-width: 1400px) {
+  .fall-collection {
+    padding: 0 80px 0px 80px; } }
 
 .fall-collection__card {
   height: 280px;
@@ -809,12 +953,21 @@ footer .fa:hover {
       margin: 15px auto;
       height: 228px;
       width: 192px; } }
+  @media (min-width: 1400px) {
+    .fall-collection__card {
+      margin: 15px auto;
+      height: 440px;
+      width: 395px; } }
   .fall-collection__card__image {
     width: 220px; }
     @media (min-width: 768px) {
       .fall-collection__card__image {
         height: 232px;
         width: 192px; } }
+    @media (min-width: 1400px) {
+      .fall-collection__card__image {
+        height: 440px;
+        width: 395px; } }
   .fall-collection__card:hover {
     opacity: 0.3; }
   .fall-collection__card__add {
@@ -869,6 +1022,10 @@ footer .fa:hover {
     #fall-collection-carousel {
       margin-top: 40px;
       margin-bottom: 80px; } }
+  @media (min-width: 1400px) {
+    #fall-collection-carousel {
+      margin-top: 80px;
+      margin-bottom: 100px; } }
 
 /*
  *  Owl Carousel - Animate Plugin
@@ -1030,6 +1187,9 @@ footer .fa:hover {
 
 .owl-theme .owl-nav.disabled + .owl-dots {
   margin-top: -40px; }
+  @media (min-width: 1400px) {
+    .owl-theme .owl-nav.disabled + .owl-dots {
+      margin-top: -100px; } }
 
 .owl-theme .owl-dots {
   text-align: center;

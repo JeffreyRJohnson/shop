@@ -21,12 +21,19 @@
     height: 24px;
     padding: 0px 10px 0px 10px;
     color: white;
+    @include atExtraLarge {
+        height: 40px;
+    }
     &--phone-number {
         display: inline-block;
         float: left;
         padding-left: 40px;
         font-size: .6em;
         margin-top: 7px;
+        @include atExtraLarge {
+            font-size: 1em;
+            margin-top: 10px;
+        }
         &--icon {
             margin-right: 20px;
         }
@@ -37,6 +44,10 @@
         padding-right: 40px;
         font-size: .6em;
         margin-top: 7px;
+        @include atExtraLarge {
+            font-size: 1em;
+            margin-top: 10px;
+        }
     }
     &__list {
         display: inline-block;
@@ -50,11 +61,17 @@
     padding: 25px 40px 25px 40px;
     margin-top: -3px;
     margin-bottom: -3px;
+    @include atExtraLarge {
+        padding: 50px 40px 50px 40px;
+    }
     &__row {
         display: inline-block;
         float: left;
         font-size: .9em;
         padding: 10px;
+        @include atExtraLarge {
+            font-size: 1.2em;
+        }
     }
     &__social {
         display: inline-block;
@@ -66,21 +83,30 @@
     &__list {
         display: inline-block;
         padding-right: 10px;
+        @include atExtraLarge {
+            padding-right: 20px;
+        }
         &--icon {
             display: inline-block; // border: 1px solid black;
             // border-radius: 50%;
             // width: 20px;
             // height: 20px;
             font-size: .9em;
-            border: 2px solid black;
+            border: 2px solid orange;
             border-radius: 50%;
             width: 20px;
             background: white;
             height: 20px;
             line-height: 1.5;
-            color: black;
+            color: orange;
             margin-right: 10px;
             background: white;
+            @include atExtraLarge {
+                font-size: 1.2em;
+                width: 30px;
+                height: 30px;
+                line-height: 1.7;
+            }
         }
     }
     &__logo {
@@ -92,7 +118,11 @@
         font-family: 'Yesteryear', cursive;
         left: 50%;
         -webkit-transform: translateX(-50%);
-        transform: translateX(-50%)
+        transform: translateX(-50%);
+        @include atExtraLarge {
+            font-size: 5em;
+            top: -100px;
+        }
     }
 }
 

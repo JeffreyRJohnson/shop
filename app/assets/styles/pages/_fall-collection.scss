@@ -2,6 +2,9 @@
     @include atMedium {
         padding: 0 40px 0px 40px;
     }
+    @include atExtraLarge {
+        padding: 0 80px 0px 80px;
+    }
     &__card {
         height: 280px;
         width: 220px;
@@ -13,11 +16,20 @@
             height: 228px;
             width: 192px;
         }
+        @include atExtraLarge {
+            margin: 15px auto;
+            height: 440px;
+            width: 395px;
+        }
         &__image {
             width: 220px;
             @include atMedium {
                 height: 232px;
                 width: 192px;
+            }
+            @include atExtraLarge {
+                height: 440px;
+                width: 395px;
             }
         }
         &:hover {
@@ -81,5 +93,9 @@
     @include atMedium {
         margin-top: 40px;
         margin-bottom: 80px;
+    }
+    @include atExtraLarge {
+        margin-top: 80px;
+        margin-bottom: 100px;
     }
 }

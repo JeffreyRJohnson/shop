@@ -105,6 +105,9 @@
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%)
     }
+    @include atExtraLarge {
+        top: 300px;
+    }
     &:before {
         content: ' ';
         position: absolute;
@@ -150,6 +153,9 @@
         margin-top: 0px;
         width: 100%;
     }
+    @include atExtraLarge {
+        height: 731px;
+    }
 }
 
 .triangle-container {
@@ -160,6 +166,9 @@
     transform: translateX(-50%);
     top: 108px;
     z-index: 15;
+    @include atExtraLarge {
+        top: 180px;
+    }
 }
 
 .primary-nav__logo--triangle {
@@ -194,12 +203,20 @@
     display: inline-block;
     box-sizing: border-box;
     height: 470px;
+    @include atExtraLarge {
+        height: 800px;
+        margin-top: -20px;
+    }
 }
 
 .home__card--test img {
     width: 75%;
     height: 50%;
     padding-top: 24px;
+    @include atExtraLarge {
+        height: 740px;
+        width: 140%;
+    }
 }
 
 .left-model {
@@ -210,6 +227,9 @@
     // margin-top: -268px;
     float: left;
     padding-left: 40px;
+    @include atExtraLarge {
+        padding-left: 80px;
+    }
 }
 
 .right-model {
@@ -220,4 +240,7 @@
     // margin-top: -268px;
     float: right;
     padding-right: 10px;
+    @include atExtraLarge {
+        padding-right: 20px;
+    }
 }

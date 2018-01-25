@@ -2,12 +2,18 @@
     padding: 90px 0 20px 0;
     @include atMedium {
         padding: 20px 40px 60px 40px;
+        @include atExtraLarge {
+            padding: 330px 40px 180px 40px;
+        }
     }
     &__card {
         width: 100%;
         height: 60px;
         position: relative;
         color: white;
+        @include atExtraLarge {
+            height: 110px;
+        }
         &:after {
             content: "";
             position: absolute;
@@ -18,6 +24,10 @@
             height: 0;
             border-top: 30px solid white;
             border-bottom: 30px solid white;
+            @include atExtraLarge {
+                border-top: 55px solid white;
+                border-bottom: 55px solid white;
+            }
         }
         &:before {
             content: "";
@@ -27,56 +37,86 @@
             width: 0;
             height: 0;
             border-top: 30px solid transparent;
-            border-bottom: 30px solid transparent; // @include atMedium {
-            //     border-top: 50px solid transparent;
-            //     border-bottom: 50px solid transparent;
-            // }
+            border-bottom: 30px solid transparent;
+            @include atExtraLarge {
+                right: -55px;
+                border-top: 55px solid transparent;
+                border-bottom: 55px solid transparent;
+            }
         }
         &--orange {
             background: orange;
             &:before {
                 border-left: 30px solid white;
+                @include atExtraLarge {
+                    border-left: 55px solid white;
+                }
             }
             &:after {
                 border-left: 30px solid orange;
+                @include atExtraLarge {
+                    border-left: 55px solid orange;
+                }
             }
         }
         &--black {
             background: black;
             &:before {
                 border-left: 30px solid white;
+                @include atExtraLarge {
+                    border-left: 55px solid white;
+                }
             }
             &:after {
                 border-left: 30px solid black;
+                @include atExtraLarge {
+                    border-left: 55px solid black;
+                }
             }
         }
         &--grey {
             background: grey;
             &:before {
                 border-left: 30px solid white;
+                @include atExtraLarge {
+                    border-left: 55px solid white;
+                }
             }
             &:after {
                 border-left: 30px solid grey;
+                @include atExtraLarge {
+                    border-left: 55px solid grey;
+                }
             }
-        } // &__text-container {
-        //     color: white;
-        // }
+        }
         &--icon {
             font-size: 2em;
             float: left;
             margin-top: .4em;
             margin-left: 15%;
+            @include atExtraLarge {
+                font-size: 3.4em;
+                margin-top: .5em;
+            }
         }
         &--heading {
             font-size: 1.2em;
             font-weight: 500;
             margin: 15px 0 0 5%;
             float: left;
+            @include atExtraLarge {
+                font-size: 2.4em;
+                margin: 25px 0 0 5%;
+            }
         }
         &--sub {
             font-size: .7em;
             float: left;
             margin: 1px 0 0 5%;
+            @include atExtraLarge {
+                font-size: 1.2em;
+                margin-left: 5%;
+            }
         }
     }
 }
