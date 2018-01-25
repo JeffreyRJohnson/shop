@@ -10,4 +10,7 @@
 
 #our-brands-carousel {
     padding-bottom: 20px;
+    @include atMedium {
+        padding: 60px 40px 60px 40px;
+    }
 }

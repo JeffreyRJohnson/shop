@@ -14,7 +14,8 @@ $(document).ready(function () {
         nav: false,
         dots: false
       },
-      1150: {
+      //1150
+      850: {
         items: 1,
         dots: true
       }
@@ -37,8 +38,8 @@ $(document).ready(function () {
         rtl: true,
         dots: false
       },
-
-      1150: {
+      //1150
+      768: {
         items: 3,
         rtl: true
       }
@@ -59,6 +60,9 @@ $(document).ready(function () {
         items: 1,
         nav: false,
         dots: false
+      },
+      768: {
+        items: 3
       }
     }
   });
@@ -77,6 +81,9 @@ $(document).ready(function () {
         items: 2,
         nav: false,
         dots: false
+      },
+      768: {
+        items: 4
       }
     }
   });
@@ -94,7 +101,10 @@ $(document).ready(function () {
       0: {
         items: 2,
         nav: false,
-        dots: false
+        dots: false,
+      },
+      768: {
+        items: 6
       }
     }
   });
@@ -113,6 +123,9 @@ $(document).ready(function () {
         items: 1,
         nav: false,
         dots: false
+      },
+      768: {
+        items: 2
       }
     }
   });

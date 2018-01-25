@@ -36,34 +36,56 @@
 // }
 .testimonials {
     padding-bottom: 50px;
+    @include atMedium {
+        padding-bottom: 30px;
+    }
     &__card {
         &__quote {
             font-family: 'Yesteryear', cursive;
             padding-top: 40px;
             margin: 0 auto;
             font-size: 1.4em;
+            @include atMedium {
+                padding-top: 50px;
+            }
             &--name {
                 font-family: 'Yesteryear', cursive;
                 padding-top: 50px;
                 font-size: 2em;
                 color: grey;
+                @include atMedium {
+                    padding-top: 20px;
+                    font-size: 1.8em;
+                }
             }
             &--job {
                 padding-top: 15px;
                 font-size: 1em; //margin-bottom: 40px;
+                @include atMedium {
+                    padding-top: 5px;
+                    font-size: .8em;
+                }
             }
         }
         &__image {
             height: 240px;
             width: 210px;
+            @include atMedium {
+                // height: 370px;
+                // width: 300px
+            }
         }
     }
 }
 
 #testimonials-carousel {
     margin-top: 50px;
-    border: 1px solid grey;
+    border: 2px solid grey;
     padding-top: 40px;
+    @include atMedium {
+        margin-top: -20px;
+        padding-top: 0px;
+    }
 }
 
 .testimonials__card__text-container {
@@ -71,10 +93,52 @@
     width: 50%;
     text-align: left;
     padding-left: 70px;
+    @include atMedium {
+        width: 49%;
+    }
 }
 
 .testimonials__card__image-container {
     float: left;
     padding: 20px 20px 1px 1px;
     width: 30%;
+    @include atMedium {
+        padding: 0px 20px 0px 0px;
+        width: 30%;
+    }
+}
+
+.testimonials__triangle__container {
+    // position: relative; //overflow: hidden;
+    position: relative; // left: 75%;
+    // -webkit-transform: translateX(-50%);
+    // transform: translateX(-50%);
+    top: 31px;
+    z-index: 20;
+    left: 38%;
+}
+
+.testimonials__triangle {
+    @include atMedium {
+        height: 50px;
+        width: 240px;
+        border-top: 1px solid grey;
+    }
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &:before,
+    &:after {
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
+        border-top: 50px solid grey;
+    }
+    &:after {
+        border-top-color: white;
+        top: -1px;
+    }
 }

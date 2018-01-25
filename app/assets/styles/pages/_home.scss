@@ -1,7 +1,7 @@
 .home {
     height: 500px;
     padding-top: 140px;
-    @include atLarge {
+    @include atMedium {
         margin-bottom: 0;
         padding-top: 0;
     }
@@ -15,14 +15,14 @@
         top: 180px;
         left: 15%;
         @include atMedium {
-            top: 300px;
+            top: 210px;
             position: absolute;
             left: 50%;
             -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-            padding: 15px;
-            width: 180px;
-            font-size: 1.4em;
+            padding: 12px;
+            width: 120px;
+            font-size: 1em;
             font-weight: bold;
         }
     }
@@ -99,8 +99,8 @@
         padding: 20px 30px;
     }
     @include atMedium {
-        top: 340px;
-        padding: 80px 100px;
+        top: 200px;
+        padding: 35px 45px;
         left: 50%;
         -webkit-transform: translateX(-50%);
         transform: translateX(-50%)
@@ -141,25 +141,65 @@
 }
 
 #home-carousel {
-    border: 2px solid grey;
+    border-bottom: 2px solid grey;
+    border-top: 2px solid grey;
     @include atMedium {
-        border: none;
         border-bottom: 2px solid grey;
-        padding-bottom: 40px;
+        border-top: 2px solid grey;
+        padding-bottom: 13px;
+        margin-top: 0px;
+        width: 100%;
+    }
+}
+
+.triangle-container {
+    // position: relative; //overflow: hidden;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 108px;
+    z-index: 15;
+}
+
+.primary-nav__logo--triangle {
+    @include atMedium {
+        height: 50px;
+        width: 240px;
+        border-top: 1px solid grey;
+    }
+    &:after,
+    &:before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+    &:before,
+    &:after {
+        border-left: 120px solid transparent;
+        border-right: 120px solid transparent;
+        border-top: 50px solid grey;
+    }
+    &:after {
+        border-top-color: white;
+        top: -1px;
     }
 }
 
 .home__card--test {
     position: relative;
     width: 100%;
-    cursor: pointer; //height: 50%;
+    cursor: pointer;
     display: inline-block;
     box-sizing: border-box;
+    height: 470px;
 }
 
 .home__card--test img {
-    width: 100%;
-    float: left;
+    width: 75%;
+    height: 50%;
+    padding-top: 24px;
 }
 
 .left-model {
@@ -169,6 +209,7 @@
     // padding-left: 200px;
     // margin-top: -268px;
     float: left;
+    padding-left: 40px;
 }
 
 .right-model {
@@ -178,4 +219,5 @@
     // padding-left: 200px;
     // margin-top: -268px;
     float: right;
+    padding-right: 10px;
 }
