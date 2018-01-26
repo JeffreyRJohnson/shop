@@ -1,5 +1,6 @@
 .handpicked {
-    text-align: center;
+    text-align: center; //padding: 0px 10px 0px 10px;
+    padding: 40px 10px 0px 10px;
     @include atMedium {
         padding: 0 40px 50px 40px;
     }
@@ -9,13 +10,20 @@
     }
     &-carousel {
         &__2-row-card {
-            width: 340px;
-            height: 340px;
-            margin: 0 auto 10px auto;
+            width: 100%;
+            margin: 0 10px 10px 0px;
             outline: 3px solid white;
             outline-offset: -20px;
-            position: relative;
-            cursor: pointer;
+            @include atSmall {
+                width: 340px;
+                height: 340px;
+                margin: 0 auto 10px auto;
+                outline: 3px solid white;
+                outline-offset: -20px;
+                position: relative;
+                cursor: pointer;
+                border: 1px solid red;
+            }
             @include atMedium {
                 margin: 10px 0px 0px 0;
                 width: 270px;
@@ -107,6 +115,6 @@
 }
 
 #handpicked-carousel {
-    margin: 0 0 0px 0;
+    margin-top: 0px;
     width: 100%;
 }

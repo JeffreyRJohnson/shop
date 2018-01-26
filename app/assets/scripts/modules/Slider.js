@@ -15,8 +15,8 @@ $(document).ready(function () {
         dots: false
       },
       //1150
-      850: {
-        items: 1,
+      768: {
+        items: 2,
         dots: true
       }
     }

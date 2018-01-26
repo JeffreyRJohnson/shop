@@ -1,4 +1,5 @@
 .fall-collection {
+    padding: 40px 10px 0px 10px;
     @include atMedium {
         padding: 0 40px 0px 40px;
     }
@@ -87,9 +88,6 @@
 
 #fall-collection-carousel {
     border: 1px solid lightgrey;
-    margin-top: 40px;
-    margin-bottom: 110px;
-    padding: 0;
     @include atMedium {
         margin-top: 40px;
         margin-bottom: 80px;
