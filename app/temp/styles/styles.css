@@ -197,7 +197,8 @@ section {
     .primary-nav__large-screen__container {
       display: inline-block;
       -webkit-box-sizing: border-box;
-              box-sizing: border-box; } }
+              box-sizing: border-box;
+      width: 100%; } }
 
 .primary-nav__large-screen {
   display: none; }
@@ -208,31 +209,31 @@ section {
       width: 100%;
       height: 24px;
       color: white; } }
-  @media (min-width: 1400px) {
-    .primary-nav__large-screen {
-      height: 40px; } }
   .primary-nav__large-screen--phone-number {
     display: inline-block;
     float: left;
     padding-left: 40px;
-    font-size: .6em;
+    font-size: 0.6em;
     margin-top: 7px; }
     @media (min-width: 1400px) {
       .primary-nav__large-screen--phone-number {
         font-size: 1em;
-        margin-top: 10px; } }
+        margin-top: 5px; } }
     .primary-nav__large-screen--phone-number--icon {
       padding-right: 20px; }
   .primary-nav__large-screen__row {
     display: inline-block;
     float: right;
-    padding-right: 40px;
-    font-size: .6em;
+    font-size: 0.6em;
     margin-top: 7px; }
+    @media (min-width: 768px) {
+      .primary-nav__large-screen__row {
+        padding-right: 20px; } }
     @media (min-width: 1400px) {
       .primary-nav__large-screen__row {
         font-size: 1em;
-        margin-top: 10px; } }
+        margin-top: 5px;
+        padding-right: 40px; } }
   .primary-nav__large-screen__list {
     display: inline-block; }
 
@@ -243,6 +244,7 @@ section {
       width: 100%;
       background-color: white;
       display: inline-block;
+      padding: 15px 20px 15px 20px;
       margin-top: -3px;
       margin-bottom: -3px; } }
   @media (min-width: 1400px) {
@@ -251,7 +253,7 @@ section {
   .primary-nav__large-screen2__row {
     display: inline-block;
     float: left;
-    font-size: .9em;
+    font-size: 0.9em;
     padding: 10px; }
     @media (min-width: 1400px) {
       .primary-nav__large-screen2__row {
@@ -262,6 +264,10 @@ section {
     padding-right: 60px;
     margin-right: 20px;
     text-align: center; }
+    @media (min-width: 768px) {
+      .primary-nav__large-screen2__social {
+        margin-top: 6px;
+        padding-right: 0; } }
   .primary-nav__large-screen2__list {
     display: inline-block;
     padding-right: 10px; }
@@ -270,7 +276,7 @@ section {
         padding-right: 20px; } }
     .primary-nav__large-screen2__list--icon {
       display: inline-block;
-      font-size: .9em;
+      font-size: 0.9em;
       border: 2px solid orange;
       border-radius: 50%;
       width: 20px;
@@ -286,6 +292,9 @@ section {
           width: 30px;
           height: 30px;
           line-height: 1.7; } }
+  .primary-nav__large-screen2__link {
+    text-decoration: none;
+    color: black; }
   .primary-nav__large-screen2__logo {
     position: absolute;
     color: black;
@@ -296,6 +305,10 @@ section {
     left: 50%;
     -webkit-transform: translateX(-50%);
     transform: translateX(-50%); }
+    @media (min-width: 768px) {
+      .primary-nav__large-screen2__logo {
+        top: -20px;
+        z-index: 10; } }
     @media (min-width: 1400px) {
       .primary-nav__large-screen2__logo {
         font-size: 5em;
@@ -426,6 +439,9 @@ footer .fa:hover {
   @media (min-width: 1400px) {
     .testimonials {
       padding-bottom: 70px; } }
+  @media (min-width: 1400px) {
+    .testimonials__card {
+      width: 128%; } }
   .testimonials__card__quote {
     font-family: 'Yesteryear', cursive;
     padding-top: 40px;
@@ -442,9 +458,10 @@ footer .fa:hover {
     .testimonials__card__quote--name {
       font-family: 'Yesteryear', cursive;
       padding-top: 50px;
-      font-size: 2em;
+      font-size: 1.8em;
       color: grey;
-      display: inline-block; }
+      display: inline-block;
+      padding-left: 20px; }
       @media (min-width: 768px) {
         .testimonials__card__quote--name {
           padding-top: 20px;
@@ -460,7 +477,7 @@ footer .fa:hover {
       @media (min-width: 768px) {
         .testimonials__card__quote--job {
           padding-top: 5px;
-          font-size: .8em; } }
+          font-size: 0.8em; } }
       @media (min-width: 1400px) {
         .testimonials__card__quote--job {
           padding-top: 20px;
@@ -487,11 +504,12 @@ footer .fa:hover {
 
 .testimonials__card__text-container {
   float: left;
-  width: 37%;
-  text-align: left;
-  padding-left: 70px; }
+  width: 60%;
+  padding-left: 60px;
+  padding-right: 10px; }
   @media (min-width: 768px) {
     .testimonials__card__text-container {
+      text-align: left;
       width: 49%;
       display: inline-block; } }
 
@@ -503,7 +521,6 @@ footer .fa:hover {
     .testimonials__card__image-container {
       padding: 0px 20px 0px 0px;
       width: 30%;
-      border: 1px solid red;
       display: inline-block; } }
 
 .testimonials__triangle__container {
@@ -515,13 +532,18 @@ footer .fa:hover {
       display: inline-block;
       position: relative;
       z-index: 20;
-      margin: 0 39%; } }
+      margin: 0 39%;
+      top: 33px; } }
+  @media (min-width: 1400px) {
+    .testimonials__triangle__container {
+      top: 83px;
+      margin: 0 44%; } }
 
 @media (min-width: 768px) {
   .testimonials__triangle {
     height: 50px;
     width: 240px;
-    border-top: 1px solid grey; } }
+    border-top: 2px solid grey; } }
 
 .testimonials__triangle:after, .testimonials__triangle:before {
   content: '';
@@ -536,13 +558,13 @@ footer .fa:hover {
 
 .testimonials__triangle:after {
   border-top-color: white;
-  top: -1px; }
+  top: -2px; }
 
 .features {
   padding: 160px 10px 0px 10px; }
   @media (min-width: 768px) {
     .features {
-      padding: 20px 40px 60px 40px; } }
+      padding: 180px 40px 60px 40px; } }
   @media (min-width: 768px) and (min-width: 1400px) {
     .features {
       padding: 330px 40px 180px 40px; } }
@@ -555,7 +577,7 @@ footer .fa:hover {
       .features__card {
         height: 110px; } }
     .features__card:after {
-      content: "";
+      content: '';
       position: absolute;
       left: 0;
       right: 0;
@@ -569,7 +591,7 @@ footer .fa:hover {
           border-top: 55px solid white;
           border-bottom: 55px solid white; } }
     .features__card:before {
-      content: "";
+      content: '';
       position: absolute;
       right: -30px;
       bottom: 0;
@@ -621,29 +643,37 @@ footer .fa:hover {
     .features__card--icon {
       font-size: 2.2em;
       float: left;
-      margin-top: .4em;
+      margin-top: 0.4em;
       margin-left: 15%; }
       @media (min-width: 1400px) {
         .features__card--icon {
           font-size: 3.4em;
-          margin-top: .5em; } }
+          margin-top: 0.5em; } }
     .features__card--heading {
       font-size: 1.2em;
       font-weight: 500;
       margin: 13px 0px 0 5%;
       float: left; }
+      @media (min-width: 768px) {
+        .features__card--heading {
+          font-size: 1em;
+          margin: 13px 0px 0 3%; } }
       @media (min-width: 1400px) {
         .features__card--heading {
           font-size: 2.4em;
           margin: 25px 0 0 5%; } }
     .features__card--sub {
-      font-size: .8em;
+      font-size: 0.8em;
       float: left;
       margin: -10px 0px 0px 5%; }
+      @media (min-width: 768px) {
+        .features__card--sub {
+          font-size: 0.7em;
+          margin: -16px 0px 0px 3%; } }
       @media (min-width: 1400px) {
         .features__card--sub {
           font-size: 1.2em;
-          margin-left: 5%; } }
+          margin: 0px 10px 10px 5%; } }
 
 #features-carousel {
   margin: 60px auto 20px auto; }
@@ -665,35 +695,16 @@ footer .fa:hover {
     width: 100%;
     margin: 0 10px 10px 0px;
     outline: 3px solid white;
-    outline-offset: -20px; }
-    @media (min-width: 481px) {
-      .handpicked-carousel__2-row-card {
-        width: 340px;
-        height: 340px;
-        margin: 0 auto 10px auto;
-        outline: 3px solid white;
-        outline-offset: -20px;
-        position: relative;
-        cursor: pointer;
-        border: 1px solid red; } }
-    @media (min-width: 768px) {
-      .handpicked-carousel__2-row-card {
-        margin: 10px 0px 0px 0;
-        width: 270px;
-        height: 270px; } }
-    @media (min-width: 1400px) {
-      .handpicked-carousel__2-row-card {
-        margin: 20px 0px 0px 0;
-        width: 550px;
-        height: 550px;
-        outline-offset: -30px; } }
+    outline-offset: -20px;
+    position: relative;
+    padding: 0 5px;
+    cursor: pointer; }
     .handpicked-carousel__2-row-card:hover {
-      opacity: .3; }
+      opacity: 0.3; }
     .handpicked-carousel__2-row-card__hoverBox {
       opacity: 0;
       position: absolute;
       left: 50%;
-      top: 50%;
       width: 100%;
       height: 100%;
       -webkit-transform: translate(-50%, -50%);
@@ -709,15 +720,13 @@ footer .fa:hover {
   .handpicked-carousel__2-row-image {
     width: 100%; }
   .handpicked-carousel__1-row-card {
-    width: 340px;
     margin: 0 auto;
-    cursor: pointer; }
-    @media (min-width: 768px) {
-      .handpicked-carousel__1-row-card {
-        margin: 0px 0px 0px -15px;
-        width: 280px; } }
+    cursor: pointer;
+    padding: 0 5px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
     .handpicked-carousel__1-row-card:hover {
-      opacity: .3; }
+      opacity: 0.3; }
     .handpicked-carousel__1-row-card__hoverBox {
       opacity: 0;
       position: absolute;
@@ -736,22 +745,12 @@ footer .fa:hover {
         font-size: 24px;
         padding: 50px 32px; }
   .handpicked-carousel__1-row-image {
-    width: 340px;
+    width: 100%;
     outline: 3px solid white;
-    outline-offset: -20px; }
-    @media (min-width: 768px) {
-      .handpicked-carousel__1-row-image {
-        margin: 10px 0px 0 10px;
-        width: 280px;
-        height: 552px; } }
-    @media (min-width: 1400px) {
-      .handpicked-carousel__1-row-image {
-        margin: 20px 0px 0 20px;
-        width: 540px;
-        height: 1120px;
-        outline-offset: -30px; } }
+    outline-offset: -20px;
+    margin: 0px 0px 0 0px; }
     .handpicked-carousel__1-row-image:hover {
-      opacity: .5; }
+      opacity: 0.5; }
 
 #handpicked-carousel {
   margin-top: 0px;
@@ -786,29 +785,15 @@ footer .fa:hover {
         font-weight: bold; } }
 
 .home__card {
+  -webkit-box-align: center;
+  -webkit-box-pack: center;
+  display: -webkit-box;
   position: relative;
   width: 100%;
   cursor: pointer;
-  height: 100%;
-  -webkit-box-align: center;
-  -webkit-box-pack: center;
-  display: -webkit-box; }
+  height: 100%; }
   .home__card:hover {
-    opacity: .3; }
-  .home__card__image {
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    width: 100%;
-    height: 100%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    text-align: center;
-    border: 1px solid red; }
-    .home__card__image:hover {
-      opacity: 1; }
+    opacity: 0.3; }
   .home__card__hoverBox {
     opacity: 0;
     position: absolute;
@@ -825,14 +810,14 @@ footer .fa:hover {
     .home__card__hoverBox__text {
       color: green;
       font-size: 24px;
-      padding: 50px 32px; }
+      padding: 50px 32px 50px 32px; }
 
 .home-carousel__image .home__card {
   position: relative;
   width: 50%;
   cursor: pointer; }
   .home-carousel__image .home__card:hover {
-    opacity: .3; }
+    opacity: 0.3; }
   .home-carousel__image .home__card__hover-text {
     color: black;
     font-size: 24px;
@@ -893,7 +878,7 @@ footer .fa:hover {
 
 #home-carousel {
   margin-top: -80px;
-  border-bottom: 2px solid grey; }
+  border-bottom: 1px solid grey; }
   @media (min-width: 768px) {
     #home-carousel {
       border-bottom: 2px solid grey;
@@ -903,7 +888,7 @@ footer .fa:hover {
       width: 100%; } }
   @media (min-width: 1400px) {
     #home-carousel {
-      height: 731px;
+      height: 604px;
       padding: 0 0px; } }
 
 .triangle-container {
@@ -915,17 +900,17 @@ footer .fa:hover {
       left: 50%;
       -webkit-transform: translateX(-50%);
       transform: translateX(-50%);
-      top: 108px;
+      top: 89px;
       z-index: 15; } }
   @media (min-width: 1400px) {
     .triangle-container {
-      top: 180px; } }
+      top: 163px; } }
 
 @media (min-width: 768px) {
   .primary-nav__logo--triangle {
     height: 50px;
     width: 240px;
-    border-top: 1px solid grey; } }
+    border-top: 2px solid grey; } }
 
 .primary-nav__logo--triangle:after, .primary-nav__logo--triangle:before {
   content: '';
@@ -940,7 +925,7 @@ footer .fa:hover {
 
 .primary-nav__logo--triangle:after {
   border-top-color: white;
-  top: -1px; }
+  top: -2px; }
 
 .home__card--test {
   position: relative;
@@ -1007,36 +992,16 @@ footer .fa:hover {
     .fall-collection {
       padding: 0 80px 0px 80px; } }
   .fall-collection__card {
-    height: 280px;
-    width: 220px;
-    margin: 20px 20px 20px 20px;
+    margin: 0px 10px 20px 10px;
     position: relative;
     cursor: pointer; }
-    @media (min-width: 768px) {
-      .fall-collection__card {
-        margin: 15px auto;
-        height: 228px;
-        width: 192px; } }
-    @media (min-width: 1400px) {
-      .fall-collection__card {
-        margin: 15px auto;
-        height: 440px;
-        width: 395px; } }
     .fall-collection__card__image {
-      width: 220px; }
-      @media (min-width: 768px) {
-        .fall-collection__card__image {
-          height: 232px;
-          width: 192px; } }
-      @media (min-width: 1400px) {
-        .fall-collection__card__image {
-          height: 440px;
-          width: 395px; } }
+      width: 100%; }
     .fall-collection__card:hover {
       opacity: 0.3; }
     .fall-collection__card__add {
       color: white;
-      font-size: .8em;
+      font-size: 0.8em;
       position: relative;
       top: 0px;
       left: 0;
@@ -1046,7 +1011,7 @@ footer .fa:hover {
       border-left: 50px solid transparent;
       border-right: 50px solid transparent;
       height: 0;
-      width: 100px; }
+      width: 100%; }
       @media (min-width: 768px) {
         .fall-collection__card__add {
           border-left: 30px solid transparent;
@@ -1073,9 +1038,12 @@ footer .fa:hover {
       .fall-collection__card__add--text {
         font-weight: 700;
         position: relative;
-        top: 10px;
+        top: 4px;
         left: 0;
         width: 100%; }
+        @media (min-width: 481px) {
+          .fall-collection__card__add--text {
+            top: 10px; } }
 
 #fall-collection-carousel {
   border: 1px solid lightgrey; }

@@ -1,9 +1,9 @@
 import owlCarousel from 'owl.carousel';
 
-$(document).ready(function () {
+$(document).ready(function() {
   $('#home-carousel').owlCarousel({
     loop: true,
-    margin: 0,
+    margin: 100,
     responsiveClass: true,
     autoplay: false,
     autoplayTimeout: 2000,
@@ -23,7 +23,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
   $('#features-carousel').owlCarousel({
     loop: true,
     margin: 0,
@@ -47,7 +47,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
   $('#handpicked-carousel').owlCarousel({
     loop: true,
     margin: 0,
@@ -68,7 +68,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
   $('#fall-collection-carousel').owlCarousel({
     loop: true,
     margin: 0,
@@ -89,7 +89,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
   $('#our-brands-carousel').owlCarousel({
     loop: true,
     margin: 0,
@@ -101,7 +101,7 @@ $(document).ready(function () {
       0: {
         items: 2,
         nav: false,
-        dots: false,
+        dots: false
       },
       768: {
         items: 6
@@ -110,7 +110,7 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
+$(document).ready(function() {
   $('#testimonials-carousel').owlCarousel({
     loop: true,
     margin: 10,

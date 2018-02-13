@@ -13696,7 +13696,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 $(document).ready(function () {
   $('#home-carousel').owlCarousel({
     loop: true,
-    margin: 0,
+    margin: 100,
     responsiveClass: true,
     autoplay: false,
     autoplayTimeout: 2000,

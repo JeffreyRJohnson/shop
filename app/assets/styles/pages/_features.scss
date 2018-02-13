@@ -1,129 +1,137 @@
 .features {
-    padding: 160px 10px 0px 10px;
-    @include atMedium {
-        padding: 20px 40px 60px 40px;
-        @include atExtraLarge {
-            padding: 330px 40px 180px 40px;
-        }
+  padding: 160px 10px 0px 10px;
+  @include atMedium {
+    padding: 180px 40px 60px 40px;
+    @include atExtraLarge {
+      padding: 330px 40px 180px 40px;
     }
-    &__card {
-        width: 100%;
-        height: 60px;
-        position: relative;
-        color: white;
-        @include atExtraLarge {
-            height: 110px;
-        }
-        &:after {
-            content: "";
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            width: 0;
-            height: 0;
-            border-top: 30px solid white;
-            border-bottom: 30px solid white;
-            @include atExtraLarge {
-                border-top: 55px solid white;
-                border-bottom: 55px solid white;
-            }
-        }
-        &:before {
-            content: "";
-            position: absolute;
-            right: -30px;
-            bottom: 0;
-            width: 0;
-            height: 0;
-            border-top: 30px solid transparent;
-            border-bottom: 30px solid transparent;
-            @include atExtraLarge {
-                right: -55px;
-                border-top: 55px solid transparent;
-                border-bottom: 55px solid transparent;
-            }
-        }
-        &--orange {
-            background: orange;
-            &:before {
-                border-left: 30px solid white;
-                @include atExtraLarge {
-                    border-left: 55px solid white;
-                }
-            }
-            &:after {
-                border-left: 30px solid orange;
-                @include atExtraLarge {
-                    border-left: 55px solid orange;
-                }
-            }
-        }
-        &--black {
-            background: black;
-            &:before {
-                border-left: 30px solid white;
-                @include atExtraLarge {
-                    border-left: 55px solid white;
-                }
-            }
-            &:after {
-                border-left: 30px solid black;
-                @include atExtraLarge {
-                    border-left: 55px solid black;
-                }
-            }
-        }
-        &--grey {
-            background: grey;
-            &:before {
-                border-left: 30px solid white;
-                @include atExtraLarge {
-                    border-left: 55px solid white;
-                }
-            }
-            &:after {
-                border-left: 30px solid grey;
-                @include atExtraLarge {
-                    border-left: 55px solid grey;
-                }
-            }
-        }
-        &--icon {
-            font-size: 2.2em;
-            float: left;
-            margin-top: .4em;
-            margin-left: 15%;
-            @include atExtraLarge {
-                font-size: 3.4em;
-                margin-top: .5em;
-            }
-        }
-        &--heading {
-            font-size: 1.2em;
-            font-weight: 500;
-            margin: 13px 0px 0 5%;
-            float: left;
-            @include atExtraLarge {
-                font-size: 2.4em;
-                margin: 25px 0 0 5%;
-            }
-        }
-        &--sub {
-            font-size: .8em;
-            float: left;
-            margin: -10px 0px 0px 5%;
-            @include atExtraLarge {
-                font-size: 1.2em;
-                margin-left: 5%;
-            }
-        }
+  }
+  &__card {
+    width: 100%;
+    height: 60px;
+    position: relative;
+    color: white;
+    @include atExtraLarge {
+      height: 110px;
     }
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-top: 30px solid white;
+      border-bottom: 30px solid white;
+      @include atExtraLarge {
+        border-top: 55px solid white;
+        border-bottom: 55px solid white;
+      }
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      right: -30px;
+      bottom: 0;
+      width: 0;
+      height: 0;
+      border-top: 30px solid transparent;
+      border-bottom: 30px solid transparent;
+      @include atExtraLarge {
+        right: -55px;
+        border-top: 55px solid transparent;
+        border-bottom: 55px solid transparent;
+      }
+    }
+    &--orange {
+      background: orange;
+      &:before {
+        border-left: 30px solid white;
+        @include atExtraLarge {
+          border-left: 55px solid white;
+        }
+      }
+      &:after {
+        border-left: 30px solid orange;
+        @include atExtraLarge {
+          border-left: 55px solid orange;
+        }
+      }
+    }
+    &--black {
+      background: black;
+      &:before {
+        border-left: 30px solid white;
+        @include atExtraLarge {
+          border-left: 55px solid white;
+        }
+      }
+      &:after {
+        border-left: 30px solid black;
+        @include atExtraLarge {
+          border-left: 55px solid black;
+        }
+      }
+    }
+    &--grey {
+      background: grey;
+      &:before {
+        border-left: 30px solid white;
+        @include atExtraLarge {
+          border-left: 55px solid white;
+        }
+      }
+      &:after {
+        border-left: 30px solid grey;
+        @include atExtraLarge {
+          border-left: 55px solid grey;
+        }
+      }
+    }
+    &--icon {
+      font-size: 2.2em;
+      float: left;
+      margin-top: 0.4em;
+      margin-left: 15%;
+      @include atExtraLarge {
+        font-size: 3.4em;
+        margin-top: 0.5em;
+      }
+    }
+    &--heading {
+      font-size: 1.2em;
+      font-weight: 500;
+      margin: 13px 0px 0 5%;
+      float: left;
+      @include atMedium {
+        font-size: 1em;
+        margin: 13px 0px 0 3%;
+      }
+      @include atExtraLarge {
+        font-size: 2.4em;
+        margin: 25px 0 0 5%;
+      }
+    }
+    &--sub {
+      font-size: 0.8em;
+      float: left;
+      margin: -10px 0px 0px 5%;
+      @include atMedium {
+        font-size: 0.7em;
+        margin: -16px 0px 0px 3%;
+      }
+      @include atExtraLarge {
+        font-size: 1.2em;
+        margin: 0px 10px 10px 5%;
+      }
+    }
+  }
 }
 
 #features-carousel {
-    margin: 60px auto 20px auto;
-    @include atMedium {
-        margin: 0px auto 0px auto;
-    }
+  margin: 60px auto 20px auto;
+  @include atMedium {
+    margin: 0px auto 0px auto;
+  }
 }

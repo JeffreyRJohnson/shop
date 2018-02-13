@@ -1,138 +1,154 @@
 .primary-nav {
-    align-items: center;
-    position: absolute;
-    z-index: 5;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    display: inline-block;
-    @include atMedium {
-        display: none;
-    }
+  align-items: center;
+  position: absolute;
+  z-index: 5;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  display: inline-block;
+  @include atMedium {
+    display: none;
+  }
 }
 
 .primary-nav__large-screen__container {
-    display: none;
-    @include atMedium {
-        display: inline-block;
-        box-sizing: border-box;
-    }
+  display: none;
+  @include atMedium {
+    display: inline-block;
+    box-sizing: border-box;
+    width: 100%;
+  }
 }
 
 .primary-nav__large-screen {
-    display: none;
+  display: none;
+  @include atMedium {
+    display: inline-block;
+    background-color: grey;
+    width: 100%;
+    height: 24px;
+    color: white;
+  }
+  &--phone-number {
+    display: inline-block;
+    float: left;
+    padding-left: 40px;
+    font-size: 0.6em;
+    margin-top: 7px;
+    @include atExtraLarge {
+      font-size: 1em;
+      margin-top: 5px;
+    }
+    &--icon {
+      padding-right: 20px;
+    }
+  }
+  &__row {
+    display: inline-block;
+    float: right;
+    font-size: 0.6em;
+    margin-top: 7px;
     @include atMedium {
-        display: inline-block;
-        background-color: grey;
-        width: 100%;
-        height: 24px;
-        color: white;
+      padding-right: 20px;
     }
     @include atExtraLarge {
-        height: 40px;
+      font-size: 1em;
+      margin-top: 5px;
+      padding-right: 40px;
     }
-    &--phone-number {
-        display: inline-block;
-        float: left;
-        padding-left: 40px;
-        font-size: .6em;
-        margin-top: 7px;
-        @include atExtraLarge {
-            font-size: 1em;
-            margin-top: 10px;
-        }
-        &--icon {
-            padding-right: 20px;
-        }
-    }
-    &__row {
-        display: inline-block;
-        float: right;
-        padding-right: 40px;
-        font-size: .6em;
-        margin-top: 7px;
-        @include atExtraLarge {
-            font-size: 1em;
-            margin-top: 10px;
-        }
-    }
-    &__list {
-        display: inline-block;
-    }
+  }
+  &__list {
+    display: inline-block;
+  }
 }
 
 .primary-nav__large-screen2 {
-    display: none;
+  display: none;
+  @include atMedium {
+    width: 100%;
+    background-color: white;
+    display: inline-block;
+    padding: 15px 20px 15px 20px;
+    margin-top: -3px;
+    margin-bottom: -3px;
+  }
+  @include atExtraLarge {
+    padding: 50px 40px 50px 40px;
+  }
+  &__row {
+    display: inline-block;
+    float: left;
+    font-size: 0.9em;
+    padding: 10px;
+    @include atExtraLarge {
+      font-size: 1.2em;
+    }
+  }
+  &__social {
+    display: inline-block;
+    float: right;
+    padding-right: 60px;
+    margin-right: 20px;
+    text-align: center;
     @include atMedium {
-        width: 100%;
-        background-color: white;
-        display: inline-block; //padding: 25px 40px 25px 40px;
-        margin-top: -3px;
-        margin-bottom: -3px;
+      margin-top: 6px;
+      padding-right: 0;
+    }
+  }
+  &__list {
+    display: inline-block;
+    padding-right: 10px;
+    @include atMedium {
     }
     @include atExtraLarge {
-        padding: 50px 40px 50px 40px;
+      padding-right: 20px;
     }
-    &__row {
-        display: inline-block;
-        float: left;
-        font-size: .9em;
-        padding: 10px;
-        @include atExtraLarge {
-            font-size: 1.2em;
-        }
+    &--icon {
+      display: inline-block; // border: 1px solid black;
+      // border-radius: 50%;
+      // width: 20px;
+      // height: 20px;
+      font-size: 0.9em;
+      border: 2px solid orange;
+      border-radius: 50%;
+      width: 20px;
+      background: white;
+      height: 20px;
+      line-height: 1.5;
+      color: orange;
+      margin-right: 10px;
+      background: white;
+      @include atExtraLarge {
+        font-size: 1.2em;
+        width: 30px;
+        height: 30px;
+        line-height: 1.7;
+      }
     }
-    &__social {
-        display: inline-block;
-        float: right;
-        padding-right: 60px;
-        margin-right: 20px;
-        text-align: center;
+  }
+  &__link {
+    text-decoration: none;
+    color: black;
+  }
+  &__logo {
+    position: absolute;
+    color: black;
+    top: -60px;
+    font-size: 3em;
+    font-weight: 600;
+    font-family: 'Yesteryear', cursive;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    @include atMedium {
+      top: -20px;
+      z-index: 10;
     }
-    &__list {
-        display: inline-block;
-        padding-right: 10px;
-        @include atExtraLarge {
-            padding-right: 20px;
-        }
-        &--icon {
-            display: inline-block; // border: 1px solid black;
-            // border-radius: 50%;
-            // width: 20px;
-            // height: 20px;
-            font-size: .9em;
-            border: 2px solid orange;
-            border-radius: 50%;
-            width: 20px;
-            background: white;
-            height: 20px;
-            line-height: 1.5;
-            color: orange;
-            margin-right: 10px;
-            background: white;
-            @include atExtraLarge {
-                font-size: 1.2em;
-                width: 30px;
-                height: 30px;
-                line-height: 1.7;
-            }
-        }
+    @include atExtraLarge {
+      font-size: 5em;
+      top: -100px;
     }
-    &__logo {
-        position: absolute;
-        color: black;
-        top: -60px;
-        font-size: 3em;
-        font-weight: 600;
-        font-family: 'Yesteryear', cursive;
-        left: 50%;
-        -webkit-transform: translateX(-50%);
-        transform: translateX(-50%);
-        @include atExtraLarge {
-            font-size: 5em;
-            top: -100px;
-        }
-    }
+  }
 }
 
 // .primary-nav__logo--triangle {
@@ -185,95 +201,95 @@
 //     z-index: 15;
 // }
 .primary-nav__logo {
-    position: absolute;
-    top: 20px;
-    left: 40px;
-    text-decoration: none;
-    font-size: 4em;
-    font-weight: 600;
-    font-family: 'Yesteryear', cursive;
-    color: black;
-    @include atMedium {
-        top: 60px;
-        left: 40%;
-    }
-    @include atLarge {
-        position: none;
-        margin: 70px 20% 0px 30%;
-        border: 1px solid red;
-    }
-    @include atExtraLarge {
-        left: 20%;
-    }
+  position: absolute;
+  top: 20px;
+  left: 40px;
+  text-decoration: none;
+  font-size: 4em;
+  font-weight: 600;
+  font-family: 'Yesteryear', cursive;
+  color: black;
+  @include atMedium {
+    top: 60px;
+    left: 40%;
+  }
+  @include atLarge {
+    position: none;
+    margin: 70px 20% 0px 30%;
+    border: 1px solid red;
+  }
+  @include atExtraLarge {
+    left: 20%;
+  }
 }
 
 .primary-nav__burger {
-    position: absolute;
-    top: 30px;
-    right: 40px;
-    display: inline-block;
-    font-size: 2.4em;
-    &:hover {
-        cursor: pointer;
-    }
-    @include atMedium {
-        display: none;
-    }
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  display: inline-block;
+  font-size: 2.4em;
+  &:hover {
+    cursor: pointer;
+  }
+  @include atMedium {
+    display: none;
+  }
 }
 
 .primary-nav__row {
-    display: none;
-    width: 100%;
-    margin-top: 100px;
-    background: orange;
-    opacity: 0.8;
-    @include atMedium {
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-around;
-        margin-right: 45px;
-        margin-left: 45px;
-        background: none;
-        margin-top: 0px;
-    }
-    @include atLarge {
-        display: none; // justify-content: flex-end;
-        // margin-left: 10%;
-        // margin-right: 10%;
-    }
-    @include atExtraLarge {
-        margin-left: 20%;
-        margin-right: 20%;
-    }
+  display: none;
+  width: 100%;
+  margin-top: 100px;
+  background: orange;
+  opacity: 0.8;
+  @include atMedium {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    margin-right: 45px;
+    margin-left: 45px;
+    background: none;
+    margin-top: 0px;
+  }
+  @include atLarge {
+    display: none; // justify-content: flex-end;
+    // margin-left: 10%;
+    // margin-right: 10%;
+  }
+  @include atExtraLarge {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
 }
 
 .primary-nav__row--open {
-    display: block;
-    padding: 20px 0;
+  display: block;
+  padding: 20px 0;
 }
 
 .primary-nav__link {
-    text-decoration: none;
-    font-size: 0.8em;
-    padding-bottom: 10px;
-    &:hover {
-        color: black;
-        @include atMedium {
-            color: #fff;
-        }
+  text-decoration: none;
+  font-size: 0.8em;
+  padding-bottom: 10px;
+  &:hover {
+    color: black;
+    @include atMedium {
+      color: #fff;
     }
+  }
 }
 
 .primary-nav__list {
-    display: block;
-    padding: 15px 0;
-    text-align: center;
-    font-size: 1.4em;
-    @include atSmall {
-        padding: 20px 0;
-    }
-    @include atMedium {
-        display: inline-block;
-        padding: 0 0.4rem;
-    }
+  display: block;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1.4em;
+  @include atSmall {
+    padding: 20px 0;
+  }
+  @include atMedium {
+    display: inline-block;
+    padding: 0 0.4rem;
+  }
 }
